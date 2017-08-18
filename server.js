@@ -56,5 +56,5 @@ app.use(express.static(__dirname+"/public"));
 
 // listen
 app.listen(port, () => {
-    console.log("Server set up on Port: 3000");
+    console.log(`Server set up on Port: ${port}`);
 });
