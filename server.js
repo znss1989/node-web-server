@@ -13,13 +13,13 @@ app.use((req, res, next) => {
     next();
 });
 
-// maintain in progress
-app.use((req, res, next) => {
-    res.render("maintain.hbs", {
-        message: "Maintenance in process, please come back later..."
-    });
-    // no next here
-});
+// // maintain in progress
+// app.use((req, res, next) => {
+//     res.render("maintain.hbs", {
+//         message: "Maintenance in process, please come back later..."
+//     });
+//     // no next here
+// });
 
 // helper
 hbs.registerHelper("getCurrentYear", () => {
